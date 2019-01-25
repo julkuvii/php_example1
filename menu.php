@@ -3,16 +3,42 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
+    <div id="menu">
         <h2>Menu</h2>
+            <ul>
+                <li><a href="first.php">Basic</a></li>
+                <li><a href="second.php">Array</a></li>
+                <li><a href="third.php">Forms</a></li>
+                <li><a href="fourth.php">Functions</a></li>
+                <li><a href="fifth.php">Calculator</a></li>
+            </ul>
+        <h2>Database</h2>
         <ul>
-        <li><a href="first.php">Basic</a></li>
-        <li><a href="second.php">Array</a></li>
-        <li><a href="third.php">Forms</a></li>
-        <li><a href="fourth.php">Functions</a></li>
-        <li><a href="fifth.php">Calculator</a></li>
-
+            <li><a href="books.php">Books</a></li>
         </ul>
-    </body>
-</html>
+    </div>
+    <div id="header">
+        Welcome
+
+        <?php 
+            session_start();
+            if (isset($_SESSION['logged_in'])){
+                echo '<b>'.$_SESSION['username'].'</b>';
+                echo '&nbsp;';
+                echo '<a href="logout.php">Logout</a>';
+            }
+
+            else{
+                echo '<b>Guest</b>';
+                echo '<a href="login.php">Login</a>';
+
+            }
+        ?>
+    </div>
+    <div id="container">
+    
+   

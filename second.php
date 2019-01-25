@@ -1,8 +1,11 @@
 <?php include "menu.php"; ?>
+
+
+
     <h1>Assosiative array</h1>
     <?php
     $students=array(
-      array("fn"=>'Jim', "ln"=>'Smith'),
+      array("fn"=>'RiQ', "ln"=>'Smith'),
       array("fn"=>'Lisa', "ln"=>'Jones'),
       array("fn"=>'Bill', "ln"=>'Daniels')
     );

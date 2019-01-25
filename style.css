@@ -1,0 +1,37 @@
+#menu{
+    background-color: wheat;
+    float: left;
+    width: 140px;
+    padding-left: 10px;
+}
+
+#menu ul{
+    list-style-type: none;
+}
+
+#menu ul a :hover{
+    background-color: white;
+}
+
+#container{
+    background-color: cadetblue;
+    margin-left: 160px;
+}
+
+#footer{
+    background-color: darkgoldenrod;
+    text-align: center;
+    height: 100px;
+}
+
+#header{
+    margin-left: 160px;
+    background-color: gray;
+    color: black;
+    height: 50px;
+}
+
+#header a{
+    color: black;
+    margin-left: 400px;
+}
